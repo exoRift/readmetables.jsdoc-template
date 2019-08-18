@@ -26,20 +26,28 @@ In your JSDoc config file, you want to point the JSDoc template to your README t
     "allowUnknownTags": true
   },
   "source": {
-    "include": ["lib/"] /* The folders that contain your JSDoc data */
+    "include": ["lib/"]
   },
   "templates": {
-    "templateDir": "templates/" /* The path to the folder that contains your template named "README.md" */
+    "templateDir": "templates/"
   },
   "opts": {
     "encoding": "utf8",
-    "template": "readmetables-jsdoc-template", /* This is not to be confused with the directory of your template README file */
-    "destination": "./" /* This should be the root folder of your project where the resulting README will be sent */,
+    "template": "readmetables-jsdoc-template",
+    "destination": "./",
     "private": true,
     "recurse": true
   }
 }
 ```
+Notes:
+> `source.include` - The folders that contain your JSDoc data
+
+> `templates.templateDir` - The path to the folder that contains your template named "README<span>.</span>md"
+
+> `opts.template` - This is not to be confused with the directory of your template README file
+
+> `opts.destination` - This should be the root folder of your project where the resulting README will be sent
 
 ## README Template Example
 ```md
