@@ -1,0 +1,18 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": ["./"]
+  },
+  "templates": {
+    "templateDir": "../../templates/function/"
+  },
+  "opts": {
+    "encoding": "utf8",
+    "template": "../../../",
+    "destination": "./",
+    "private": true,
+    "recurse": true
+  }
+}

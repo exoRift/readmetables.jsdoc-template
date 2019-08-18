@@ -1,0 +1,57 @@
+{
+  "name": "jsdoc-readmetables-template",
+  "version": "1.0.0",
+  "description": "A JSDoc template that takes a template README and injects tables with class and function data via keywords",
+  "main": "publish.js",
+  "scripts": {
+    "test": "nyc --reporter lcov ava --verbose **/*.test.js",
+    "lint": "eslint ./"
+  },
+  "nyc": {
+    "exclude": [
+      "coverage/**",
+      "packages/*/test/**",
+      "test/**",
+      "build/**",
+      "test{,-*}.js",
+      "**/*{.,-}test.js",
+      "**/__tests__/**",
+      "**/node_modules/**",
+      "**/babel.config.js"
+    ]
+  },
+  "files": [
+    "modules/",
+    "!**/*.test.js"
+  ],
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jsdoc": "^3.6.3",
+    "nyc": "^14.1.1"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mets11rap/jsdoc-readmetables-template.git"
+  },
+  "keywords": [
+    "jsdoc",
+    "node",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "mets11rap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mets11rap/jsdoc-readmetables-template/issues"
+  },
+  "homepage": "https://github.com/mets11rap/jsdoc-readmetables-template#readme"
+}
