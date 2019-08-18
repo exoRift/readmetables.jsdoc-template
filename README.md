@@ -15,6 +15,9 @@
 - <font size='+1'>[**Cyclone Engine**](https://github.com/mets11rap/cyclone-engine)</font>
 
 #
+```
+npm i readmetables-jsdoc-template
+```
 ## Setting up a template
 
 In your JSDoc config file, you want to point the JSDoc template to your README template. This is done by specifying a directory with `templates.templateDir`. Your resulting README file with output to your `opts.destination` directory.
