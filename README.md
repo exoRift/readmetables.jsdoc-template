@@ -4,9 +4,9 @@
 [![codecov](https://codecov.io/gh/mets11rap/readmetables.jsdoc-template/branch/master/graph/badge.svg)](https://codecov.io/gh/mets11rap/cyclone-engine)
 [![Discord Server](https://img.shields.io/badge/-Support%20Server-b.svg?colorA=697ec4&colorB=7289da&logo=discord)](https://discord.gg/Rqd8SJ9)
 ![Version](https://img.shields.io/github/package-json/v/mets11rap/readmetables.jsdoc-template.svg?label=Version)
-![NPM Downloads](https://img.shields.io/npm/dt/readmetables.jsdoc-template?label=Downloads&logo=npm)
+![NPM Downloads](https://img.shields.io/npm/dt/readmetables-jsdoc-template?label=Downloads&logo=npm)
 
-[![NPM Page](https://img.shields.io/badge/NPM-Page-critical?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/readmetables.jsdoc-template)
+[![NPM Page](https://img.shields.io/badge/NPM-Page-critical?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/readmetables-jsdoc-template)
 
 ### A JSDoc template that takes a template README and injects tables with class and function data via keywords
 
