@@ -1,3 +1,5 @@
+const newline = require('os').type() === 'Windows_NT' ? '\r\n' : '\n'
+
 const dotRegex = /\./g
 const barRegex = /\|/g
 const typeArrowRegex = /([<>])/g
@@ -20,7 +22,7 @@ function format (columns, doclet) {
   }
 
   const results = rows.reduce((a, r) => {
-    return a + (a ? '\r\n' : '') + columns.reduce((cA, c) => {
+    return a + (a ? newline : '') + columns.reduce((cA, c) => {
       let content
 
       switch (c) {

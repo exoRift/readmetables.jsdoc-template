@@ -1,3 +1,5 @@
+const newline = require('os').type() === 'Windows_NT' ? '\r\n' : '\n'
+
 /**
  * Compile a doclet into a table.
  * @generator
@@ -26,13 +28,13 @@ function compileTable (doclet, columns, rows, options) {
   }
 
   const returnText = doclet.kind === 'function' || doclet.kind === 'method'
-    ? '\r\n<font size=\'+1\'>Returns:</font>\r\n' + doclet.returns.reduce((rA, r) => {
-      return rA + (rA.length ? '\r\n\r\n' : '') + '> <font color=\'#f5c842\'>{' + r.type.names.reduce((tA, t) => tA + (tA.length ? '|' : '') + t, '') + '}</font>' + (r.description ? ` - *${r.description}*` : '')
+    ? `${newline}<font size='+1'>Returns:</font>${newline}` + doclet.returns.reduce((rA, r) => {
+      return rA + (rA.length ? `${newline}${newline}` : '') + '> <font color=\'#f5c842\'>{' + r.type.names.reduce((tA, t) => tA + (tA.length ? '|' : '') + t, '') + '}</font>' + (r.description ? ` - *${r.description}*` : '')
     }, '')
     : ''
 
   const table =
-    `<font size='+2'${tableNameColor ? ` color='${tableNameColor}'` : ''}>${doclet.name}</font>\r\n\r\n<font size='+1' color='${descColor}'>${doclet.classdesc || doclet.description}</font>\r\n\r\n---\r\n${columnText}\r\n${columnUnderline}\r\n${rows}${returnText}`
+    `<font size='+2'${tableNameColor ? ` color='${tableNameColor}'` : ''}>${doclet.name}</font>${newline}${newline}<font size='+1' color='${descColor}'>${doclet.classdesc || doclet.description}</font>${newline}${newline}---${newline}${columnText}${newline}${columnUnderline}${newline}${rows}${returnText}`
 
   return table
 }
