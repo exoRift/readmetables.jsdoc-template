@@ -5,7 +5,8 @@
   "main": "publish.js",
   "scripts": {
     "test": "nyc --reporter lcov ava --verbose **/*.test.js",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "publish": "npm publish"
   },
   "nyc": {
     "exclude": [
