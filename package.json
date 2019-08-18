@@ -36,9 +36,6 @@
     "jsdoc": "^3.6.3",
     "nyc": "^14.1.1"
   },
-  "engines": {
-    "node": ">= 10.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mets11rap/jsdoc-readmetables-template.git"
