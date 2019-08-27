@@ -16,7 +16,7 @@ const {
   compileTable,
   unpack,
   parseDir
-} = require('./modules')
+} = require('./modules/')
 
 const templateData = fs.readFileSync(path.join(templateDir, 'README.md'), 'utf8')
 

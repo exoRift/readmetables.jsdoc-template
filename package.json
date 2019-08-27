@@ -1,12 +1,12 @@
 {
   "name": "readmetables-jsdoc-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A JSDoc template that takes a template README and injects tables with class and function data via keywords",
   "main": "publish.js",
   "scripts": {
     "test": "nyc --reporter lcov ava --verbose **/*.test.js",
     "lint": "eslint ./",
-    "publish": "npm publish"
+    "publishModule": "npm publish"
   },
   "nyc": {
     "exclude": [
